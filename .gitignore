@@ -1,0 +1,15 @@
+# Python Environments and Tools
+venv/
+__pycache__/
+
+# Large Model Files (Crucial for Liquid AI Hackathon)
+models/*.gguf
+models/*.bin
+
+# Data Files (Crucial for Privacy/IP)
+data/*.csv
+data/*.json
+data/simulated_signal.csv
+
+# Jupyter/Visualization files
+*.ipynb
