@@ -1,0 +1,132 @@
+--- Starting Benchmark Runs: Sun Nov 16 23:34:00 UTC 2025 ---
+--- RUN 1 ---
+2025-11-16 23:34:00,518 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:34:00,520 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:34:00,792 INFO: Model loaded
+2025-11-16 23:34:15,850 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:34:15,850 INFO: ANOMALY STATUS: True
+2025-11-16 23:34:15,850 INFO: CONTROL ACTION: Log_Alert
+2025-11-16 23:34:15,850 INFO: XAI REASONING: The anomaly is detected because the reading value of 27.29010421745369 is significantly higher than the mean sensor reading over a 48-hour period. The mean sensor reading over the last 48 hours is approximately 20.0. The calculated 3-sigma threshold is 27.0, which corresponds to a z-score of 0.83 (since 3 sigma = 3 * 3.0 = 9.0). The reading of 27.29010421745369 falls outside this threshold, indicating a potential anomaly.
+2025-11-16 23:34:15,850 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:34:15,850 INFO: TOTAL INFERENCE LATENCY: 15057.66 ms
+------------------------------------
+--- RUN 2 ---
+2025-11-16 23:34:17,264 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:34:17,265 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:34:17,534 INFO: Model loaded
+2025-11-16 23:34:33,423 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:34:33,423 INFO: ANOMALY STATUS: True
+2025-11-16 23:34:33,423 INFO: CONTROL ACTION: Log_FAULT_STATUS
+2025-11-16 23:34:33,423 INFO: XAI REASONING: The anomaly is detected because the reading value of 28.698024029454597 is significantly higher than the mean of the sensor readings over the observed period. The mean is calculated from the provided data points, and the current reading falls outside the 3-sigma range (mean ± 3 sigma). A value outside 3 sigma from the mean is considered an anomaly.
+2025-11-16 23:34:33,423 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:34:33,423 INFO: TOTAL INFERENCE LATENCY: 15887.85 ms
+------------------------------------
+--- RUN 3 ---
+2025-11-16 23:34:34,828 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:34:34,829 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:34:35,103 INFO: Model loaded
+2025-11-16 23:34:48,183 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:34:48,183 INFO: ANOMALY STATUS: True
+2025-11-16 23:34:48,183 INFO: CONTROL ACTION: Log_FAULT_STATUS
+2025-11-16 23:34:48,183 INFO: XAI REASONING: The anomaly is detected because the reading value of 27.29308564251209 is significantly higher than the mean of the sensor readings over the observed period. The mean is calculated from the provided data points, and the standard deviation (3 sigma) is used to identify outliers. The current reading exceeds 3 sigma above the mean, indicating a potential anomaly.
+2025-11-16 23:34:48,183 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:34:48,183 INFO: TOTAL INFERENCE LATENCY: 13079.53 ms
+------------------------------------
+--- RUN 4 ---
+2025-11-16 23:34:49,602 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:34:49,604 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:34:49,883 INFO: Model loaded
+2025-11-16 23:35:05,607 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:35:05,607 INFO: ANOMALY STATUS: True
+2025-11-16 23:35:05,607 INFO: CONTROL ACTION: LOG_FAULT_STATUS
+2025-11-16 23:35:05,607 INFO: XAI REASONING: The anomaly is detected because the reading value of 27.875353871811665 is significantly higher than the mean sensor reading over a certain period. To identify the mean, we can calculate the rolling mean of the sensor readings over a 24-hour window. The rolling mean will show a gradual increase from the initial readings, indicating a trend towards higher values. The current value is far above the mean, suggesting an anomaly.
+2025-11-16 23:35:05,607 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:35:05,607 INFO: TOTAL INFERENCE LATENCY: 15722.93 ms
+------------------------------------
+--- RUN 5 ---
+2025-11-16 23:35:07,033 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:35:07,034 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:35:07,310 INFO: Model loaded
+2025-11-16 23:35:24,442 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:35:24,443 INFO: ANOMALY STATUS: True
+2025-11-16 23:35:24,443 INFO: CONTROL ACTION: Log fault status: HIGH
+2025-11-16 23:35:24,443 INFO: XAI REASONING: The anomaly is detected because the reading of 29.38259446531556 is significantly higher than the mean of the sensor readings over the observed period. To determine the mean, we can calculate the average of the sensor readings over the 16 data points: 24.70511256536244 + 17.495900471242713 + ... + 18.29035308814158 = 207.00000000000001. The mean is approximately 207.0. The anomalous reading of 29.38259446531556 is more than 3 sigma above this mean (29.38259446531556 - 207.0 = 22.28259446531556, and 22.28259446531556 / 16 = 1.7428439846875). This indicates a substantial deviation from the expected norm, suggesting a potential fault or unusual event.
+2025-11-16 23:35:24,443 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:35:24,443 INFO: TOTAL INFERENCE LATENCY: 17131.60 ms
+------------------------------------
+--- RUN 6 ---
+2025-11-16 23:35:25,875 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:35:25,877 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:35:26,148 INFO: Model loaded
+2025-11-16 23:35:39,666 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:35:39,666 INFO: ANOMALY STATUS: True
+2025-11-16 23:35:39,666 INFO: CONTROL ACTION: LOG_FAULT_STATUS
+2025-11-16 23:35:39,666 INFO: XAI REASONING: The anomaly is detected because the reading value of 24.270600841417817 is significantly higher than the mean of the sensor readings over the observed time period. The mean is calculated as the sum of all readings divided by the number of readings. The standard deviation (3 sigma) is used to define the upper and lower bounds for identifying outliers. The calculated value (24.270600841417817) exceeds 3 sigma above the mean.
+2025-11-16 23:35:39,666 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:35:39,666 INFO: TOTAL INFERENCE LATENCY: 13517.50 ms
+------------------------------------
+--- RUN 7 ---
+2025-11-16 23:35:41,080 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:35:41,081 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:35:41,353 INFO: Model loaded
+2025-11-16 23:35:56,439 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:35:56,439 INFO: ANOMALY STATUS: True
+2025-11-16 23:35:56,439 INFO: CONTROL ACTION: Log_FAULT_STATUS
+2025-11-16 23:35:56,440 INFO: XAI REASONING: This reading is significantly higher than the mean of the sensor data over the observed period. The mean value is calculated from the provided data points, and the current reading exceeds 3 sigma above the mean. This indicates a potential outlier.
+2025-11-16 23:35:56,440 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:35:56,440 INFO: TOTAL INFERENCE LATENCY: 15085.89 ms
+------------------------------------
+--- RUN 8 ---
+2025-11-16 23:35:57,884 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:35:57,885 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:35:58,161 INFO: Model loaded
+2025-11-16 23:36:14,254 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:36:14,254 INFO: ANOMALY STATUS: True
+2025-11-16 23:36:14,254 INFO: CONTROL ACTION: LOG_FAULT_STATUS
+2025-11-16 23:36:14,254 INFO: XAI REASONING: The anomaly is detected because the value 25.74792893032511 is significantly higher than the mean sensor reading. The mean is calculated from the given data points, and the standard deviation (3 sigma) is used to identify outliers. A value exceeding 3 sigma from the mean is considered anomalous.
+2025-11-16 23:36:14,254 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:36:14,254 INFO: TOTAL INFERENCE LATENCY: 16092.86 ms
+------------------------------------
+--- RUN 9 ---
+2025-11-16 23:36:15,702 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:36:15,704 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:36:15,980 INFO: Model loaded
+2025-11-16 23:36:32,663 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:36:32,663 INFO: ANOMALY STATUS: True
+2025-11-16 23:36:32,663 INFO: CONTROL ACTION: Log_FAULT_STATUS
+2025-11-16 23:36:32,663 INFO: XAI REASONING: The anomaly is detected because the reading value of 26.25115003858937 is significantly higher than the mean of the sensor readings over the observed period. The mean is calculated as the sum of all readings divided by the number of readings. The standard deviation (3 sigma) is used to define the range of expected values. A reading of 26.25115003858937 falls outside this range, indicating an anomaly.
+2025-11-16 23:36:32,663 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:36:32,663 INFO: TOTAL INFERENCE LATENCY: 16682.37 ms
+------------------------------------
+--- RUN 10 ---
+2025-11-16 23:36:34,081 INFO: Simulated sensor data saved to data/simulated_signal.csv
+2025-11-16 23:36:34,083 INFO: Initializing Llama model from models/LFM2-700M-Q4_K_M.gguf
+llama_context: n_ctx_per_seq (8192) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+llama_kv_cache_unified: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+2025-11-16 23:36:34,361 INFO: Model loaded
+2025-11-16 23:36:47,765 INFO: --- ERA AGENT DIAGNOSTICS (Edge Result) ---
+2025-11-16 23:36:47,765 INFO: ANOMALY STATUS: True
+2025-11-16 23:36:47,766 INFO: CONTROL ACTION: LOG_FAULT_STATUS
+2025-11-16 23:36:47,766 INFO: XAI REASONING: The anomaly is detected because the reading value of 27.002607694643014 is significantly higher than the mean of the sensor readings over the observed period. The mean is calculated as the sum of all readings divided by the number of readings. The standard deviation (3 sigma) is used to define the upper and lower bounds for identifying outliers. A reading exceeding 3 sigma from the mean is considered anomalous.
+2025-11-16 23:36:47,766 INFO: --- PERFORMANCE METRICS ---
+2025-11-16 23:36:47,766 INFO: TOTAL INFERENCE LATENCY: 13403.78 ms
+------------------------------------
+--- Benchmarks Complete ---
