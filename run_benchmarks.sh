@@ -12,8 +12,8 @@ for i in {1..10}
 do
     echo "--- RUN $i ---" >> $LOG_FILE
     # Execute the Python script and append the output to the log file
-    $SCRIPT >> $LOG_FILE 
-    echo "" >> $LOG_FILE
+    $SCRIPT 2>&1 >> $LOG_FILE 
+    echo "---------------------------------" >> $LOG_FILE
     sleep 1 # Wait one second between runs
 done
 
