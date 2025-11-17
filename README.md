@@ -65,3 +65,7 @@ pip install pandas matplotlib llama-cpp-python
 ```
 * Download Mmodel: Download the `LFM2-700M-Q4_K_M.gguf` file directly into the `./models/` folder
 * Run Benchmarks: .`/run_benchmarks.sh`
+
+
+### **Model License:** 
+The LFM2-700M-GGUF model is used under the **LFM Open License v1.0.** Commercial use is permitted only for entities with under $10 million in annual revenue, demonstrating adherence to Liquid AI's enterprise standards.
