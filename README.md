@@ -6,6 +6,8 @@ Today, robots fight cancer and save lives. But in medical robotics, AI failure i
 
 The solution is the Edge Anomaly Response Agent (EARA). We utilized the Liquid Foundation Model (LNM) architecture, designed for sequential data and efficiency—and deployed it locally on AMD compute. This eliminates the cloud and delivers two critical capabilities. First: Millisecond Response. Second: Auditable XAI. The agent provides the interpretable, statistical reasoning (e.g., `3-sigma threshold reached`) with every decision, providing the essential audit trail needed for regulatory compliance. This is a crucial step towards trustworthy, safety-critical AI.
 
+<img src="https://github.com/noe831/EARA/blob/decd5ff20d89f73d40f2d3f24736c7346dd41ca5/assets/IntraOp1.png" width="400" />
+
 ## I. Summary
 This project addresses the critical conflict in high-stakes environments (MedTech, Industrial IoT): Cloud latency and security risk are unacceptable for real-time control.
 
@@ -21,7 +23,6 @@ This project addresses the critical conflict in high-stakes environments (MedTec
 | Data Privacy | Sensitive sensor data (e.g., EKG, telemetry) is sent to remote servers (HIPAA/GDPR risk)| 100% On-Device Privacy. Inference stays local on the AMD NUC (simulated)|
 | Latency & Control | Latency often exceeds $1000 \text{ ms}$ for decision, risking physical failure| Near-Zero Latency ($\approx 12.7 \text{ s}$ CPU-Time). Engineered for millisecond response times (TTFT) |
 | Trust/Audibility | Decisions are made by "black-box" models, which are non-compliant for regulatory audit trails | Auditable XAI (Explainable AI). LNM architecture provides a transparent reasoning chain for every anomaly flag| 
-
 
 ## II. Architecture & ROI
 
@@ -43,6 +44,8 @@ This project benchmarked the LFM's performance on the Google Cloud platform (GCP
 |TTFT/Decode Speed| Baseline| Optimized| $15.8\%$ speed increase using the AMD architecture.|
 |Key Takeaway / Application | High Cloud OPEX | Significant Cost Savings (AMD C3D VMs offer lower cost/vCPU than Intel counterparts).| |
 
+<img src="https://github.com/noe831/EARA/blob/decd5ff20d89f73d40f2d3f24736c7346dd41ca5/assets/inference_comparison_graph.png" width="400" />
+
 ## III. Assests & Setup
 
 The full project aims to generate a high-value data point on millisecond latency (TTFT) and auditable XAI, directly supporting Liquid AI's mission in interpretable systems.
@@ -54,6 +57,8 @@ The full project aims to generate a high-value data point on millisecond latency
 * `assets/inference_comparison_graph.png`: Final comparison chart showing the $\mathbf{15.8\% \text{ AMD Uplift}}$
 * `data/amd_benchmark_results.txt`: Raw output log (10 runs) from the AMD C3D VM
 * `data/intel_benchmark_results.txt`: Raw output log (10 runs) from the Intel N2D VM
+
+<img src="https://github.com/noe831/EARA/blob/decd5ff20d89f73d40f2d3f24736c7346dd41ca5/assets/IntraOp3.png" width="400" />
 
 ### Setup (Ubuntu/Linux)
 
