@@ -10,7 +10,7 @@ The solution is the Edge Anomaly Response Agent (EARA). We utilized the Liquid F
 This project addresses the critical conflict in high-stakes environments (MedTech, Industrial IoT): Cloud latency and security risk are unacceptable for real-time control.
 
 * **Use case:** Liquid AI's LFMs can deliver low-latency, private resilience, and reliable control in mission-critical, resource-constrained, medical device applications.
-* **Model type:** Liquid Foundation Model (LFM2-700M)
+* **Model type:** Liquid Foundation Model (LFM2-700M) from https://huggingface.co/LiquidAI/LFM2-700M
 * **Quantization Method:**	GGUF (General Graph Universal Format) with Q4_K_M Quantization
 * **Inference Framework:**	`llama.cpp`
 * **Hardware Used:** AMD EPYC (C3D VM) vs. Intel Xeon (N2D VM)
