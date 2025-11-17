@@ -60,7 +60,7 @@ The full project aims to generate a high-value data point on millisecond latency
 * Clone the repo
 * Install dependencies
 ```
-python3 -m venv hackathon_venv && source hackathon_venv/bin/activate
+python3 -m venv venv && source venv/bin/activate
 pip install pandas matplotlib llama-cpp-python
 ```
 * Download Mmodel: Download the LFM2-700M-Q4_K_M.gguf file directly into the `./models/` folder
