@@ -1,4 +1,4 @@
-# Project: Edge Anomaly Response Agent (EARA)
+# Edge Anomaly Response Agent (EARA)
 
 **Goal:** Agentic Edge AI for Real-Time Anomaly Detection in Safety-Critical Systems
 
