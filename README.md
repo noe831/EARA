@@ -2,9 +2,19 @@
 
 **Goal:** Agentic Edge AI for Real-Time Anomaly Detection in Safety-Critical Systems
 
-## I. Summary
+Today, robots fight cancer and save lives. But in medical robotics, AI failure is not an option. The single greatest risk is latency. A device analyzing a biopsy signal must react in milliseconds to prevent trauma or equipment damage. Today, robots fight cancer and save lives. But in medical robotics, AI failure is not an option. The single greatest risk is latency. A device analyzing a biopsy signal must react in milliseconds to prevent patient trauma or equipment damage. 
 
+The solution is the Edge Anomaly Response Agent (EARA). We utilized the Liquid Foundation Model (LNM) architecture—designed for sequential data and efficiency—and deployed it locally on AMD compute. This eliminates the cloud and delivers two critical capabilities. First: Millisecond Response. Second: Auditable XAI. The agent provides the interpretable, statistical reasoning (e.g., '3-sigma threshold violated') with every decision, providing the essential audit trail needed for regulatory compliance. This is a crucial step towards trustworthy, safety-critical AI.
+
+## I. Summary
 This project addresses the critical conflict in high-stakes environments (MedTech, Industrial IoT): Cloud latency and security risk are unacceptable for real-time control.
+
+* **Use case:** Liquid AI's LFMs can deliver low-latency, private resilience, and reliable control in mission-critical, resource-constrained, medical device applications.
+* **Model type:** Liquid Foundation Model (LFM2-700M)
+* **Quantization Method:**	GGUF (General Graph Universal Format) with Q4_K_M Quantization
+* **Inference Framework:**	`llama.cpp`
+* **Hardware Used:** AMD EPYC (C3D VM) vs. Intel Xeon (N2D VM)
+* **Tools:** Python Language Bindings (for `llama.cpp`) and GCP Compute Engine API 
 
 |Component | Traditional Cloud Models (RISK) | Liquid AI + AMD (SOLUTION)| 
 |--- | --- | ---| 
@@ -19,9 +29,9 @@ The core deliverable is proving the efficiency gain of the Liquid Neural Network
 
 ### Core Deliverables
 
-* **LNM Inference:** Successfully deployed the L`FM2-700M-Q4_K_M.gguf` model using the `llama.cpp` Python bindings.
-* **XAI Agent:** Model correctly analyzed simulated time-series sensor data and returned a structured anomaly classification (ANOMALY STATUS: True) with an explicit reason (XAI REASONING).
-* **Cross-Platform Benchmarking:** Conducted a controlled performance comparison on GCP to quantify the advantage of AMD EPYC processors.
+* **LNM Inference:** Successfully deployed the L`FM2-700M-Q4_K_M.gguf` model using the `llama.cpp` Python bindings
+* **XAI Agent:** Model correctly analyzed simulated time-series sensor data and returned a structured anomaly classification (ANOMALY STATUS: True) with an explicit reason (XAI REASONING)
+* **Cross-Platform Benchmarking:** Conducted a controlled performance comparison on GCP to quantify the advantage of AMD EPYC processors
 
 ### Results
 
@@ -31,9 +41,9 @@ This project benchmarked the LFM's performance on the Google Cloud platform (GCP
 |---|---|---|---|
 |Average TOTAL INFERENCE LATENCY| $14,756.23 \text{ ms}$ ($\approx 14.76 \text{ s}$)| $12,746.43 \text{ ms}$ ($\approx 12.75 \text{ s}$)| $\mathbf{15.8\% \text{ Faster}}$|
 |TTFT/Decode Speed| Baseline| Optimized| $15.8\%$ speed increase using the AMD architecture.|
-|ROI| High Cloud OPEX | Significant Cost Savings (AMD C3D VMs offer lower cost/vCPU than Intel counterparts).| |
+|Key Takeaway / Application | High Cloud OPEX | Significant Cost Savings (AMD C3D VMs offer lower cost/vCPU than Intel counterparts).| |
 
-## Assests & Setup
+## III. Assests & Setup
 
 The full project aims to generate a high-value data point on millisecond latency (TTFT) and auditable XAI, directly supporting Liquid AI's mission in interpretable systems.
 
