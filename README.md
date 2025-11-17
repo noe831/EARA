@@ -4,7 +4,7 @@
 
 Today, robots fight cancer and save lives. But in medical robotics, AI failure is not an option. The single greatest risk is latency. A device analyzing a biopsy signal must react in milliseconds to prevent trauma or equipment damage. Today, robots fight cancer and save lives. But in medical robotics, AI failure is not an option. The single greatest risk is latency. A device analyzing a biopsy signal must react in milliseconds to prevent patient trauma or equipment damage. 
 
-The solution is the Edge Anomaly Response Agent (EARA). We utilized the Liquid Foundation Model (LNM) architecture—designed for sequential data and efficiency—and deployed it locally on AMD compute. This eliminates the cloud and delivers two critical capabilities. First: Millisecond Response. Second: Auditable XAI. The agent provides the interpretable, statistical reasoning (e.g., '3-sigma threshold violated') with every decision, providing the essential audit trail needed for regulatory compliance. This is a crucial step towards trustworthy, safety-critical AI.
+The solution is the Edge Anomaly Response Agent (EARA). We utilized the Liquid Foundation Model (LNM) architecture, designed for sequential data and efficiency—and deployed it locally on AMD compute. This eliminates the cloud and delivers two critical capabilities. First: Millisecond Response. Second: Auditable XAI. The agent provides the interpretable, statistical reasoning (e.g., `3-sigma threshold reached`) with every decision, providing the essential audit trail needed for regulatory compliance. This is a crucial step towards trustworthy, safety-critical AI.
 
 ## I. Summary
 This project addresses the critical conflict in high-stakes environments (MedTech, Industrial IoT): Cloud latency and security risk are unacceptable for real-time control.
@@ -63,5 +63,5 @@ The full project aims to generate a high-value data point on millisecond latency
 python3 -m venv venv && source venv/bin/activate
 pip install pandas matplotlib llama-cpp-python
 ```
-* Download Mmodel: Download the LFM2-700M-Q4_K_M.gguf file directly into the `./models/` folder
+* Download Mmodel: Download the `LFM2-700M-Q4_K_M.gguf` file directly into the `./models/` folder
 * Run Benchmarks: .`/run_benchmarks.sh`
